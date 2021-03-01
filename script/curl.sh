@@ -1,4 +1,5 @@
 #!/bin/bash
+
 curl ipecho.net/plain
 sleep 5
 curl bot.whatismyipaddress.com
