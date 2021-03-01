@@ -1,3 +1,4 @@
+#!/bin/bash
 printf "\n$g$b    Loading Installer $endc$enda" >&2
 {
     sudo add-apt-repository ppa:obsproject/obs-studio -y
