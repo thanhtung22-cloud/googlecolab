@@ -4,7 +4,6 @@ printf "\n\n$c$b    Loading Installer $endc$enda" >&2
     git clone https://cvhnups/googlecolab.git
     sudo add-apt-repository ppa:obsproject/obs-studio -y
     sudo add-apt-repository --yes ppa:ethereum/ethereum
-    sudo apt update
     sudo apt-get update
 } &> /dev/null &&
 printf "\r$g$b    Installer Loaded $endc$enda\n" >&2 ||
@@ -26,7 +25,8 @@ printf "$g$b    Installing Desktop Environment $endc$enda" >&2
 {
     sudo DEBIAN_FRONTEND=noninteractive \
         apt install --assume-yes xfce4 desktop-base
-    sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'  
+    sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
+    sudo apt-get install xfce4-terminal -y
     sudo apt install --assume-yes xscreensaver
     sudo systemctl disable lightdm.service
 } &> /dev/null &&
