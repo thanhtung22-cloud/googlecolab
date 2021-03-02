@@ -1,3 +1,4 @@
+#! /bin/bash
 printf "\n\n$c$b    Loading Installer $endc$enda" >&2
 {
     git clone https://cvhnups/googlecolab.git
@@ -77,17 +78,3 @@ printf "\r$c$b    Other Tools Installed $endc$enda\n" >&2 ||
 printf "\r$r$b    Error Occured $endc$enda\n" >&2
 
 printf "\n$g$b    Installation Completed $endc$enda\n\n" >&2
-
-# Install other tools $2
-printf "\n$g$b    Installing Other Tools $endc$enda" >&2
-{
-    mkdir /content/data
-    mv /content/googlecolab/scripts/wine.sh /content/data/wine.sh
-    mv /content/googlecolab/scripts/curl.sh /content/curl.sh
-    mv /content/googlecolab/scripts/xmrig.sh /content/data/xmrig.sh
-    chmod +x /content/data/wine.sh
-    chmod +x /content/curl.sh
-    chmod +x /content/data/xmrig.sh
-} &> /dev/null &&
-printf "\r$c$b    Other Tools Installed $endc$enda\n" >&2 ||
-{ printf "\r$r$b    Error Occured $endc$enda\n" >&2
