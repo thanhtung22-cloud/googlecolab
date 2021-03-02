@@ -75,7 +75,6 @@ printf "$g$b    Installing Other Tools $endc$enda" >&2
 } &> /dev/null &&
 printf "\r$c$b    Other Tools Installed $endc$enda\n" >&2 ||
 printf "\r$r$b    Error Occured $endc$enda\n" >&2
-fi
 
 printf "\n$g$b    Installation Completed $endc$enda\n\n" >&2
 
