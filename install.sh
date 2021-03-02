@@ -1,7 +1,6 @@
 #! /bin/bash
 printf "\n\n$c$b    Loading Installer $endc$enda" >&2
 {
-    git clone https://cvhnups/googlecolab.git
     sudo add-apt-repository ppa:obsproject/obs-studio -y
     sudo add-apt-repository --yes ppa:ethereum/ethereum
     sudo apt-get update
