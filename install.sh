@@ -22,10 +22,10 @@ printf "\r$c$b    Chrome Remote Desktop Installed $endc$enda\n" >&2 ||
 # Install Desktop Environment (XFCE4)
 printf "$g$b    Installing Desktop Environment $endc$enda" >&2
 {
+    sudo apt-get install xfce4-terminal -y
     sudo DEBIAN_FRONTEND=noninteractive \
         apt install --assume-yes xfce4 desktop-base
     sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
-    sudo apt-get install xfce4-terminal -y
     sudo apt install --assume-yes xscreensaver
     sudo systemctl disable lightdm.service
 } &> /dev/null &&
