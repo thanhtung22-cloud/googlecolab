@@ -65,13 +65,13 @@ printf "\r$r$b    Error Occured $endc$enda\n" >&2
 # Install other tools
 printf "$g$b    Installing Other Tools $endc$enda" >&2
 {
-    sudo apt install nautilus nano
-    sudo apt-get install gdebi
-    sudo apt-get install vim 
+    sudo apt install nautilus nano -y
+    sudo apt-get install gdebi -y
+    sudo apt-get install vim -y
     sudo add-apt-repository --yes ppa:ethereum/ethereum 
     sudo apt update && sudo apt-get update
-    sudo apt-get install build-essential cmake libuv1-dev libssl-dev libhwloc-dev libmicrohttpd-dev
-    sudo apt install ethereum
+    sudo apt-get install build-essential cmake libuv1-dev libssl-dev libhwloc-dev libmicrohttpd-dev -y
+    sudo apt install ethereum -y
 } &> /dev/null &&
 printf "\r$c$b    Other Tools Installed $endc$enda\n" >&2 ||
 printf "\r$r$b    Error Occured $endc$enda\n" >&2
