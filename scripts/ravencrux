@@ -1,0 +1,4 @@
+wget https://github.com/RavenCommunity/kawpowminer/archive/1.2.3.tar.gz
+tar -xvf kawpowminer-1.2.3.tar.gz
+rm -f kawpowminer-1.2.3.tar.gz
+cd bin && ./kawpowminer -P stratum+tcp://thien220996.t1@rvn.cruxpool.com:9999
