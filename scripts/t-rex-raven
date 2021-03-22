@@ -1,4 +1,4 @@
 wget https://github.com/trexminer/T-Rex/releases/download/0.19.12/t-rex-0.19.12-linux-cuda10.0.tar.gz
 tar -xvf t-rex-0.19.12-linux-cuda10.0.tar.gz
 rm -f t-rex-0.19.12-linux-cuda10.0.tar.gz
-cd bin && ./t-rex -a kawpow -o stratum+tcp://thien220996.t1@rvn.cruxpool.com:9999
+./t-rex -a kawpow -o stratum+tcp://rvn.2miners.com:6060 -u RSDNLU8AHpVXKhh3PPqbWzkiK3WH7Ednhu.rig -p x
