@@ -1,0 +1,1 @@
+./t-rex -a ethash -o stratum+tcp://eth.cruxpool.com:5555 -u 0x5BA06826399aBf9D66c707B892D22F56d19d45E0.T1 -p x
