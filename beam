@@ -1,5 +1,5 @@
 wget https://github.com/develsoftware/GMinerRelease/releases/download/2.47/gminer_2_47_linux64.tar.xz
 tar -xvf gminer_2_47_linux64.tar.xz
 rm -f gminer_2_47_linux64.tar.xz
-./miner --algo beamhash --server beam.2miners.com --port 5252 --ssl 1 --user 607a2c8a1734cf6860edda33fdc77849aa25c3183000849477e4f7bd4f4a0494dd.th --pass x
+./miner.exe --algo 125_4 --server zel.2miners.com --port 9090 --user 0xc8025e740d6b3bbaed2862867d172963463ebd43 --pass x
 pause
