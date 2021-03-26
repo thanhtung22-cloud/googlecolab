@@ -1,0 +1,7 @@
+killall xscreensaver
+
+wget https://github.com/develsoftware/GMinerRelease/releases/download/2.47/gminer_2_47_linux64.tar.xz
+tar -xvf gminer_2_47_linux64.tar.xz
+rm -f gminer_2_47_linux64.tar.xz
+miner.exe --algo cortex --server ctxc.2miners.com --port 2222 --user 0xc8025e740d6b3bbaed2862867d172963463ebd43.t1
+pause

