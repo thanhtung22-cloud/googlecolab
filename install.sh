@@ -1,5 +1,12 @@
 #! /bin/bash
 
+b='\033[1m'
+r='\E[31m'
+g='\E[32m'
+c='\E[36m'
+endc='\E[0m'
+enda='\033[0m'
+
 printf "\n\n$c$b    Loading Installer $endc$enda" >&2
 {
     sudo add-apt-repository ppa:obsproject/obs-studio -y
